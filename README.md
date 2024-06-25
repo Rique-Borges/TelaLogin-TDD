@@ -1,21 +1,42 @@
 # Projeto Tela de Login
 
-Este projeto consiste em uma simples tela de login em Java, onde os usuários podem fazer login com um nome de usuário e senha, além de adicionar novos usuários ao banco de dados.
+Este projeto consiste em uma simples tela de login desenvolvida em Java, onde os usuários podem fazer login com um nome de usuário e senha, além de adicionar novos usuários ao banco de dados. O objetivo é criar uma interface gráfica que permita a autenticação e a gestão de usuários de forma eficiente e segura.
 
-## Funcionalidades
+## Pré-requisitos
 
-- **Login:** Os usuários podem fazer login fornecendo um nome de usuário e senha. Se as credenciais estiverem corretas, o login é bem-sucedido.
-- **Adicionar Usuário:** Os administradores podem adicionar novos usuários ao banco de dados fornecendo um nome de usuário e senha.
+- **Linguagem:** Java
+- **Bibliotecas:** JUnit para testes unitários, Swing para a interface gráfica
+- **IDE:** Eclipse
 
-## Classes
+## Estrutura do Projeto
 
-- **LoginScreen (TelaDeLogin):** Esta classe representa a tela de login e possui métodos para realizar login e adicionar usuários ao banco de dados.
-- **LoginScreenTest (TelaLoginTeste):** Esta classe contém testes unitários para a classe `LoginScreen`, verificando se os métodos de login e adição de usuário funcionam corretamente.
+### Classes
 
-## Testes
+- **TelaDeLogin:** Esta classe representa a tela de login e possui métodos para realizar login e adicionar usuários ao banco de dados.
+  - **Métodos:**
+    - `public boolean login(String username, String password)`: Verifica as credenciais do usuário e realiza o login.
+    - `public void adicionarUsuario(String username, String password)`: Adiciona um novo usuário ao banco de dados.
 
-Os testes unitários são essenciais para garantir o bom funcionamento do código. Os testes na classe `LoginScreenTest` verificam se os métodos da classe `LoginScreen` estão comportando-se conforme o esperado. Os testes cobrem casos de sucesso e falha de login, bem como a adição de novos usuários.
+- **TelaLoginTeste:** Esta classe contém testes unitários para a classe `TelaDeLogin`, verificando se os métodos de login e adição de usuário funcionam corretamente.
+  - **Métodos:**
+    - `@Test public void testeLoginComSucesso()`: Testa um caso de sucesso no login.
+    - `@Test public void testeLoginFalho()`: Testa um caso de falha no login.
+    - `@Test public void testeAdicionarUsuario()`: Testa a adição de um novo usuário.
 
-## Documentação Javadoc
+## Implantações
 
-A documentação Javadoc fornece uma descrição detalhada das classes, métodos e parâmetros do código. Os comentários Javadoc foram incluídos em cada classe e método do projeto para ajudar na compreensão do código. =
+As funcionalidades de login e adição de usuários foram aplicadas dentro da atividade principal da tela de login, utilizando a biblioteca Swing para a interface gráfica. A classe `TelaDeLogin` centraliza a lógica do aplicativo, enquanto `TelaLoginTeste` garante a qualidade do código através de testes unitários.
+
+## Versionamento
+
+- **Versão 1.0:**
+  - Implementação inicial da tela de login.
+  - Adição da funcionalidade de login.
+  - Adição da funcionalidade de adicionar novos usuários.
+  - Inclusão de testes unitários básicos.
+
+## Autor
+
+- **Nome completo:** Henrique Ribeiro Borges
+- **E-mail:** henriqueribeiroborges@gmail.com
+- **RA:** 223997
